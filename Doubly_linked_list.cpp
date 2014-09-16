@@ -4,21 +4,20 @@ using namespace std;
 template <class t>
 class node
 {
-    public:
-        t d;
-        node *temp;
-        node *next;
-        node *prev;
-        node(t el, node *n, node *p)
-        {
-            d=el;
-            next=n;
-            prev=p;
-        }
+public:
+    t d;
+    node *temp;
+    node *next;
+    node *prev;
+    node(t el, node *n, node *p)
+    {
+        d=el;
+        next=n;
+        prev=p;
+    }
 };
 
 template <class t>
-
 class d
 {
     node<t> *head, *tail;
@@ -71,7 +70,6 @@ class d
     }
     void search(t el)
     {
-        
         node<t> temp=head;
         while(temp!=0)
         {
@@ -106,24 +104,23 @@ int main()
         switch(c)
         {
             case 1:cout<<"Enter no: ";
-                          cin>>no;
-                          a.h(no);
-                                 break;
+                    cin>>no;
+                    a.h(no);
+                    break;
             case 2:cout<<"enter no: ";
-                          cin>>no;
-                          a.t(no);
-                                 break;
+                    cin>>no;
+                    a.t(no);
+                    break;
             case 3:a.dh();
-                          break;
+                    break;
             case 4:a.dt();
-                          break;
+                    break;
             case 5:a.print();
-                          break;
+                    break;
             default: cout<<"Wrong input\n";
         }
         cout<<"do you want to continue? ";
         cin>>ans;
     }while(ans!='n');
-
     return 0;
 }
